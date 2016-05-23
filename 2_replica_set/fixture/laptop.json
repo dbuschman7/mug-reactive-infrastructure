@@ -1,0 +1,5 @@
+{ "_id" : ObjectId("531ce460000000019b9643bc"), "company" : "Samsung", "date" : ISODate("2014-03-09T22:00:00Z"), "price" : 2000, "brand" : "Ultrabook" }
+{ "_id" : ObjectId("531ce460000000019b9643ba"), "company" : "Sony", "date" : ISODate("2014-03-08T22:00:00Z"), "price" : 1500, "brand" : "Vaio" }
+{ "_id" : ObjectId("531ce460000000019b9643bd"), "company" : "Apple", "date" : ISODate("2014-03-07T22:00:00Z"), "price" : 2250, "brand" : "MacbookPro" }
+{ "_id" : ObjectId("531ce460000000019b9643be"), "company" : "Apple", "date" : ISODate("2014-03-06T22:00:00Z"), "price" : 1200, "brand" : "MacbookAir" }
+{ "_id" : ObjectId("531ce460000000019b9643bf"), "company" : "Samsung", "date" : ISODate("2014-03-05T22:00:00Z"), "price" : 1000, "brand" : "Ultrabook" }
