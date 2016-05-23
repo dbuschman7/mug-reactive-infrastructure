@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Reactive Infrastructure</title>
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/black.css">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- Printing and PDF exports -->
+<script>
+	var link = document.createElement('link');
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css'
+			: 'css/print/paper.css';
+	document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section>
+					<h2>Reactive Infrastructure with Docker and MongoDB</h2>
+				</section>
+				<section>
+					<h2>What is Docker?</h2>
+					<p class="fragment">Docker is an open-source project that automates the deployment of applications inside software containers.
+				</section>
+				<section>
+					<h2>What is a Container?</h2>
+					<ul>
+						<li class="fragment">wrap up a piece of software in a complete filesystem 
+						<li class="fragment">anything you can install on a server. 
+						<li class="fragment">contains everything it needs to run
+						<li class="fragment">code, runtime, system tools, system libraries  
+						<li class="fragment">This guarantees that it will always run the same, 
+						<li class="fragment">regardless of the environment it is running in.
+					</ul>
+				</section>
+				<section>
+					<h2>How does this help you build better software?</h2>
+					<ul>
+						<li class="fragment">When your app is in Docker containers you don’t have to worry about setting up and maintaining different
+							environments or different tooling for each language.
+						<li class="fragment">Focus on creating new features, fixing issues and shipping software.
+					</ul>
+				</section>
+				<section>
+					<h2>Accelerate Developer Onboarding</h2>
+					<ul>
+						<li class="fragment">Stop wasting hours trying to setup developer environments, spin up new instances and make copies of
+							production code to run locally.
+						<li class="fragment">With Docker, you can easily take copies of your live environment and run on any new endpoint running Docker.
+
+
+
+
+
+						
+					</ul>
+				</section>
+				<section>
+					<h2>Empower Developer Creativity</h2>
+					<ul>
+						<li class="fragment">The isolation capabilities of Docker containers free developers from the worries of using “approved”
+							language stacks and tooling.
+						<li class="fragment">Developers can use the best language and tools for their application service without worrying about causing
+							conflict issues.
+					</ul>
+				</section>
+				<section>
+					<h2>Eliminate Environment Inconsistencies</h2>
+					<ul>
+						<li class="fragment">By packaging up the application with its configs and dependencies together and shipping as a container, the
+							application will always work as designed locally, on another machine, in test or production.
+						<li class="fragment">No more worries about having to install the same configs into a different environment.
+					</ul>
+				</section>
+				<section>
+					<h2>Ship 7X More</h2>
+					<ul>
+						<li class="fragment">Docker users on average ship software 7X more after deploying Docker in their environment.
+						<li class="fragment">More frequent updates provide more value to your customers faster.
+					</ul>
+				</section>
+				<section>
+					<h2>Quickly Scale</h2>
+					<ul>
+						<li class="fragment">Docker containers spin up and down in seconds making it easy to scale an application service at any time to
+							satisfy peak customer demand, then just as easily spin down those containers to only use the resources you need when you need it
+					</ul>
+				</section>
+				<section>
+
+					<h2>Easily Remediate Issues</h2>
+					<ul>
+						<li class="fragment">Docker make it easy to identify issues and isolate the problem container, quickly roll back to make the
+							necessary changes then push the updated container into production.
+						<li class="fragment">The isolation between containers make these changes less disruptive than traditional software models.
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Examples</h2>
+					<ol>
+						<li class="fragment">Single Instance - versions 2.6, v3.0, v3.3
+						<li class="fragment">Replica Set with Auth and Fixture
+							<ul>
+								<li>1 container - 2 data, 1 arbiter
+								<Li>--keyfile for node communication
+								<li>auth setup with user defined
+								<li>fixture data pre-populated in collection
+							</ul>
+						<li class="fragment">Docker Compose -
+							<ul>
+								<li>MongoDB 3.2 - replica set
+								<li>4 containers - 3 data and 1 setup
+							</ul>
+					</ol>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history : true,
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies : [ {
+				src : 'plugin/markdown/marked.js'
+			}, {
+				src : 'plugin/markdown/markdown.js'
+			}, {
+				src : 'plugin/notes/notes.js',
+				async : true
+			}, {
+				src : 'plugin/highlight/highlight.js',
+				async : true,
+				callback : function() {
+					hljs.initHighlightingOnLoad();
+				}
+			} ]
+		});
+	</script>
+</body>
+</html>
